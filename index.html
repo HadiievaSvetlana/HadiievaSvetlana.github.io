@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,97 +9,147 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="css/defaults.css">-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-   <body>
+</head>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Светлана Гадиева</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Светлана Гадиева</h1>
-        <p>Персональная страница учителя высшей категории Абрикосовской СОШ I-III ступени. Специальность: физика. Богатый опыт преподавания математики
-        и информатики, а также участия в различных конкурсах</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Портфолио &raquo;</a></p>
-      </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Обо мне</a></li>
+                <li><a href="#files">Разработки</a></li>
+                <li><a href="#rewards">Награды</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
+</nav>
 
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Цели</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Детали &raquo;</a></p>
+        <div class="col-md-6">
+            <h1>Светлана Гадиева</h1>
+            <p>Персональная страница учителя физики МБОУ Абрикосовская школа</p>
         </div>
         <div class="col-md-4">
-          <h2>Навыки</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Детали &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Контакты</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">Детали &raquo;</a></p>
+            <div class="picture" style="margin-left: 160px; margin-top: 20px;"><img src="img/hadiieva_photo.jpg"
+                                                                                    width="350px"/></div>
+
         </div>
-      </div>
-      <div class="page-header">
-        <h1>Абрикосовская СОШ</h1>
-      </div>
-      <div class="row">
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-5">
+            <h2>Место работы</h2>
+            <p>МБОУ Абрикосовская школа</p>
+            <p> Первомайского района Республики Крым</p>
+        </div>
+        <div class="col-md-5">
+            <h2>Моё образование</h2>
+            <p>Симферопольский государственный унивеситет им. М.В. Фрунзе</p>
+            <p>Физический факультет</p>
+        </div>
+    </div>
+    <div class="page-header" id="files">
+        <h1><a href="#files">Разработки</a></h1>
+    </div>
+    <div class="row">
+        <div id="accordion">
+            <div class="accordion">
+                <div class="accordion-section">
+                    <a class="accordion-section-title" href="#accordion-1">Творческая работа</a>
+                    <div id="accordion-1" class="accordion-section-content">
+                        <p>
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTLhgtMhfHhI33KvPMmhb9VZLDN3R-k5CB12qvKLv7qa4bbfBbm61f_njoKWYHqco0qOxAGYIloo0UW/pub?embedded=true"></iframe>
+                        </p>
+                    </div><!--end .accordion-section-content-->
+                </div><!--end .accordion-section-->
+
+                <div class="accordion-section">
+                    <a class="accordion-section-title" href="#accordion-2">Методическая разработка по физике</a>
+                    <div id="accordion-2" class="accordion-section-content">
+                        <p>
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSrpQFTjmn132iz1kXVuAC7ojVhG44E8OWIhy1xKDxV2lZxEQLIjensTNs7_BED_a05-hEsS5HEyQSo/pub?embedded=true"></iframe>
+                        </p>
+                    </div><!--end .accordion-section-content-->
+                </div><!--end .accordion-section-->
+
+                <div class="accordion-section">
+                    <a class="accordion-section-title" href="#accordion-3">Рабочая программа по физике 8 класс</a>
+                    <div id="accordion-3" class="accordion-section-content">
+                        <p>
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQAHd2B8PemgEFVzQtDlJ5B5FcXAvpLcEV2Sg6VS6NNILgW--DTZmS2qtFNHG_wlyqVl-PTPyfkMKt/pub?embedded=true"></iframe>
+                        </p>
+                    </div><!--end .accordion-section-content-->
+                </div><!--end .accordion-section-->
+            </div><!--end .accordion-->
+        </div>
+    </div>
+    <div class="page-header">
+        <h1><a href="#rewards">Награды</a></h1>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="page-header">
+        <h1><a href="#contacts">Абрикосовская СОШ</a></h1>
+    </div>
+    <div class="row">
         <div id="map" style="height:250px"></div>
-    <script>
-      function initMap() {
-        var abricosovo = {lat: 45.693771, lng: 34.096950};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: abricosovo
-        });
-        var marker = new google.maps.Marker({
-          position: abricosovo,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEkF9fEhexnHx1E5yiFZwehDqGJ6ZB-nk&callback=initMap">
-    </script>
-      </div>
+        <script>
+            function initMap() {
+                var abricosovo = {lat: 45.693771, lng: 34.096950};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: abricosovo
+                });
+                var marker = new google.maps.Marker({
+                    position: abricosovo,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEkF9fEhexnHx1E5yiFZwehDqGJ6ZB-nk&callback=initMap">
+        </script>
+    </div>
+    <hr>
 
-      <hr>
-
-      <footer>
+    <footer>
         <p>&copy; 2017 Гадиева С.В.</p>
-      </footer>
-    </div> <!-- /container -->
+    </footer>
+</div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-   
-  </body>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+</body>
 </html>
